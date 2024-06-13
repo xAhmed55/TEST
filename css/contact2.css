@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+}
+
+.text ul li a{
+  color: #B1B3B3;
+}
+.text ul li a:hover{
+  color: aliceblue;
+}
+
+
+.links {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+ul li a {
+  color: #B1B3B3;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: xx-large;
+  font-weight: 370;
+
+  
+  
+}
+
+body{
+    background: black !important;
+
+}
+
+
+.contact1{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact1 .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact1 .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact1 .content p{
+    
+    font-weight: 300;
+    color: #fff;
+}
+.contanier{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contanier .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contanier .contactInfo .box{
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+}
+
+.contanier .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contanier .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contanier .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox button{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: "Josefin Sans", sans-serif
+
+}
+
+@media (max-width :991px){
+    .contact1{
+        padding: 50px;
+    }
+    .contanier{
+        flex-direction: column;
+    }
+    .contanier .contactInfo{
+        margin-bottom: 40px;
+    }
+    .contanier .contactInfo, .contactForm{
+        width: 100%;
+    }
+}

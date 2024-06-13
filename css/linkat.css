@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Josefin Sans", sans-serif;
+
+}
+
+
+nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+}
+
+body{
+    background-color:black !important ; 
+
+}
+
+
+.text ul li a{
+color: #B1B3B3;
+}
+.text ul li a:hover{
+color: aliceblue;
+}
+
+section .text-i{
+    color: #B1B3B3;
+}
+
+
+.container .fimg {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+ 
+
+}
+.cpar p{
+    color: #B1B3B3;
+}
+
+
+/* استجابة للشاشات الصغيرة */
+@media screen and (max-width: 768px) {
+    /* قم بتغيير عرض الشريط الأفقي */
+    .navbar-nav {
+      margin-left: auto;
+    }
+  }
+  
+  /* استجابة لأجهزة الهاتف الصغيرة */
+  @media screen and (max-width: 576px) {
+    /* ضبط هامبرغر للشاشات الصغيرة */
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-collapse.show {
+      display: block;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-right: 0;
+    }
+  }
+  
+  /* توسيع اطار الفيديو لتناسب الشاشة */
+  .embed-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  
+  .embed-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
